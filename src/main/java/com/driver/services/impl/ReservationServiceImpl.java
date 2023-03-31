@@ -37,7 +37,7 @@ public class ReservationServiceImpl implements ReservationService {
                      Spot minSpot=null;
                      int minPrice=Integer.MIN_VALUE;
                      for(Spot spot:spotList){
-                         if(spot.isOccupied()==false){
+                         if(spot.getOccupied()==false){
                              int noOfwheels;
                              if(spot.getSpotType().compareTo(SpotType.TWO_WHEELER)==0){
                                  noOfwheels=2;
